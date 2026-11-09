@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Too Wood To Be True</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <div class="brand">too&#8209;wood&#8209;to&#8209;be&#8209;true</div>
+  <select id="gameSelect" title="Choose a game"></select>
+  <span id="statusPill" class="pill">—</span>
+  <span id="thinking" class="thinking"></span>
+  <span class="spacer"></span>
+  <span id="costTotal" class="muted"></span>
+</header>
+
+<section id="players"></section>
+
+<main>
+  <div id="boardWrap">
+    <svg id="board" xmlns="http://www.w3.org/2000/svg"></svg>
+    <label class="boardToggle"><input type="checkbox" id="showIds"> show tile/node ids</label>
+    <div id="caption"></div>
+  </div>
+  <aside>
+    <nav class="tabs">
+      <button data-tab="feed" class="active">Everything</button>
+      <button data-tab="chat">Table talk</button>
+      <button data-tab="decision">Reasoning</button>
+    </nav>
+    <div id="filters"></div>
+    <div id="feed"></div>
+  </aside>
+</main>
+
+<footer>
+  <div class="controls">
+    <button id="btnStart" title="Start">⏮</button>
+    <button id="btnPrev" title="Previous event (←)">◀</button>
+    <button id="btnPlay" title="Play / pause (space)">▶</button>
+    <button id="btnNext" title="Next event (→)">▶|</button>
+    <button id="btnEnd" title="Latest">⏭</button>
+    <select id="speed" title="Playback speed">
+      <option value="1200">slow</option>
+      <option value="500" selected>normal</option>
+      <option value="150">fast</option>
+    </select>
+    <label class="follow"><input type="checkbox" id="follow" checked> follow live</label>
+    <span id="pos" class="muted"></span>
+  </div>
+  <input type="range" id="slider" min="0" max="0" value="0">
+</footer>
+
+<div id="modal" hidden>
+  <div class="modalBox">
+    <button id="modalClose">✕</button>
+    <div id="modalBody"></div>
+  </div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>

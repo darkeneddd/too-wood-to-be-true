@@ -1,0 +1,9 @@
+{
+  "_comment": "Seat order = list order (first seat moves first). Price-matched tiers: Fable 5.1 and GPT-6 Astra are both $10/$50 per 1M tokens; Haiku 5.5 and GPT-6 Luna are both $0.10/$0.50. Use --rotate N to shift seats.",
+  "seats": [
+    {"color": "RED",    "provider": "anthropic", "model": "claude-fable-5-1", "effort": "medium"},
+    {"color": "BLUE",   "provider": "openai",    "model": "gpt-6-astra",      "effort": "medium"},
+    {"color": "ORANGE", "provider": "anthropic", "model": "claude-haiku-5-5", "effort": "medium"},
+    {"color": "WHITE",  "provider": "openai",    "model": "gpt-6-luna",       "effort": "medium"}
+  ]
+}
